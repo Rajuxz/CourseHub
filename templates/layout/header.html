@@ -1,0 +1,23 @@
+<nav class="navbar navbar-expand-lg  bg-body-tertiary sticky-top">
+  <div class="container">
+      <a class="navbar-brand" href="/">
+        {%load static%}
+        <img class="img" style="margin-left:30px;" src="{%static '/images/classhub.png'%}">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link mx-2 bold" href="#">Blogs</a>
+          <a class="nav-link mx-2 bold" href="#">Services</a>
+          <a class="nav-link mx-2 bold" href="#">Courses</a>
+          <!-- <a class="nav-link mx-2 bold" href="#"></a> -->
+        </div>
+        <div class="navbar-nav ms-auto">
+          <a class="nav-link mx-2 rounded responsive" href="/registration/sign-in">Sign In</a>
+          <a class="nav-link bg-purple responsive" href="/registration/sign-up">Sign Up</a>
+        </div>
+      </div>
+    </div>
+</nav>

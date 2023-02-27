@@ -1,0 +1,144 @@
+/*
+                    Author
+                ==============
+                  Rajan khanal
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+:root{
+    --bg-purple: #6908af;
+    --bg-purple-light:#9B59B6;
+    --bg-purple-hover: #8500e4;
+    --color-primary:#2c016d;
+    --color-black:#010101;
+    --text-white:#eee;
+    --color-grey:#9c9c9c;
+    --font-roboto: 'Roboto';
+    --font-poppins:'Poppins', 'sans-serif';
+    --border-radius:10px;
+    --responsive-width:110px;
+    --font-regular:15px;
+    --text-regular:20px;
+    --hero-second:40px;
+}
+*{
+  font-family: 'Poppins','sans-serif' !important;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* ---------------[For image]----------------------------- */
+.img{
+    height:60px;
+}
+/*----------------------------------------------------------*/
+
+/*------------[Css for button with purple]------------------------*/
+.bg-purple{
+    background-color: var(--bg-purple);
+    color: var(--text-white);
+    border-radius: var(--border-radius);
+    transition: .5s ease-in-out;
+}
+.bg-purple:hover{
+    background-color: var(--bg-purple-hover);
+    color:var(--text-white);
+}
+.bg-purple-1{
+  background-color: #6908af;;
+  color:var(--text-white);
+  border-top-right-radius: 35px;
+  border-top-left-radius: 35px;
+}
+
+
+/*---------------[----------------------]--------------------------*/
+
+/*---------------------[custom css classes goes here ]-------------- */
+.bold{
+    font-weight: 700;
+}
+
+/*--------------------------------------------------------------------*/
+/*-------[Styles for tablets ]-----*/
+@media screen and (min-width:768px) and (max-width:1023px){
+    .responsive{
+        display: flex;
+        width:var(--responsive-width);
+        padding-left: 15px;
+      }
+      .p-1{
+        padding-left: 15px;
+      }
+      .mb-3{
+        margin-bottom: 15px;
+      }
+}
+  
+/*-------[Styles for devices with a max-width of 480px ]-----*/
+@media screen and (min-width: 480px) and (max-width:767px) {
+    .responsive{
+        display: flex;
+        width:var(--responsive-width);
+        padding-left: 15px;
+      }
+      .p-1{
+        padding-left: 15px;
+      }
+  }
+
+/* ----------------[For small scale devices ] ------------------*/
+@media screen and (min-width: 100px) and (max-width:479px) {
+    .responsive{
+        display: flex;
+        width:var(--responsive-width);
+        padding-left: 15px;
+      }
+      .p-1{
+        padding-left: 15px;
+      }
+  }
+
+
+
+/*------------------[style for navbar ends here]--------------------- */
+/* -----------------[style for hero section starts here]-------------- */
+section.hero{
+  margin:3rem 0;
+  /* background-color: var(--bg-purple-hover); */
+}
+.text-label,
+.bold-text,
+.text-hero-regular{
+  margin:30px 0;
+}
+.text-label{
+  color:var(--color-primary);
+  font-size:var(--text-regular);
+  font-weight: 600;
+  line-height:15px;
+  font-family: var(--font-poppins);
+}
+.bold-text{
+  color:var(--color-black);
+  font-size:var(--hero-second) ;
+  font-weight: 800;
+  font-family: var(--font-poppins);
+}
+.text-hero-regular{
+  color:var(--color-black);
+  font-size: var(--font-regular);
+  font-family: var(--font-poppins);
+}
+.my-btn{
+  background-color: var(--bg-purple);
+  color:var(--text-white);
+}
+.my-btn:hover{
+  background-color: var(--bg-purple-hover) !important;
+  color:var(--text-white) !important;
+}
+
+/* -----------------[style for hero section ends here]---------------- */

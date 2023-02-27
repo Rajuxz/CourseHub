@@ -1,0 +1,23 @@
+{% extends "layout/base.html" %}
+<!-- Navbar starts here -->
+{%block header%}
+
+  {% include 'layout/header.html' %}
+
+{%endblock%}
+<!-- Navbar ends here -->
+<!-- Hero content goes here -->
+{%block content%}
+
+{%include 'layout/hero.html' %}
+
+{%endblock%}
+
+{%block services%}
+  {%include 'layout/services.html' %}
+{%endblock%}
+
+{%block footer%}
+  {%include 'layout/footer.html' %}
+{%endblock%}
+<!-- Hero content ends here -->
