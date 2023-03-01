@@ -1,5 +1,5 @@
 from django.db import models
-from .models import *
+# from .models import *
 #--------------------[ Teacher Database ]-------------------#
 class Teacher(models.Model):
     t_id = models.AutoField(primary_key = True)
@@ -20,4 +20,7 @@ class Student(models.Model):
     s_password = models.CharField(max_length = 100)
     s_profile = models.ImageField(upload_to = 'student/')
     def __str__(self):
-        return self.t_name
+        return self.s_name
+    
+
+    #s_name, s_email, s_password
