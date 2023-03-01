@@ -26,27 +26,23 @@
                         <small class="or text-center">Or</small>
                         <div class="line"></div>
                     </div>
-                    <div class="row px-3">
+            <form action="/registration/sign-up" method="POST" class="needs-validation" > {% csrf_token %}
+                    <div class="row px-3 has-validation">
                         <label class="mb-1"><h6 class="mb-0 text-sm">Name</h6></label>
-                        <input class="mb-4" type="text" name="name" placeholder="Enter your full name">
+                        <input class="mb-4" type="text" class="form-control" name="name" placeholder="Enter your full name" required>
                     </div>
-                    <div class="row px-3">
+                    <div class="row px-3 has-validation">
                         <label class="mb-1"><h6 class="mb-0 text-sm">Email Address</h6></label>
-                        <input class="mb-4" type="text" name="email" placeholder="Enter a valid email address">
+                        <input class="mb-4" type="emailz" class="form-control" name="email" placeholder="Enter a valid email address" required>
                     </div>
-                    <div class="row px-3">
+                    <div class="row px-3 has-validation">
                         <label class="mb-1"><h6 class="mb-0 text-sm">Password</h6></label>
-                        <input type="password" name="password" placeholder="Enter password">
+                        <input type="password" name="password" class="form-control" placeholder="Enter password" required>
                     </div>
-                    <div class="row px-3 mb-4">
-                        <a href="#" class="ml-auto mt-1 mb-0 text-sm t-none">Forgot Password?</a>
-                    </div>
-                    <div class="row mb-3 px-3">
+                    <div class="row mb-3 px-3 mt-2">
                         <button type="submit" class="btn btn-blue text-center">Sign Up</button>
                     </div>
-                    <!-- <div class="row mb-4 px-3">
-                        <small class="font-weight-bold">Don't have an account? <a class="w-e  text-danger t-none">Register</a></small>
-                    </div> -->
+                </form>
                 </div>
             </div>
         </div>
