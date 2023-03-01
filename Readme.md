@@ -6,7 +6,7 @@ CourseHub is an online learning platform built using Django framework that provi
 
 1. Install python in your computer. 
 2. Create virtual environment using following command
-    ` pip -m venv <env_name>`
+    ` python -m venv <env_name>`
 
 3. Activate the virtual environment using this command: `<env_name>\Scripts\Activate`
 3. Now install django in virtual environment by running following command <br>
