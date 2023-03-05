@@ -26,7 +26,7 @@
                         <small class="or text-center">Or</small>
                         <div class="line"></div>
                     </div>
-            <form action="/registration/sign-up" method="POST" class="needs-validation" > {% csrf_token %}
+            <form action="/registration/sign-up" method="POST" class="needs-validation" >{% csrf_token %}
                     <div class="row px-3 has-validation">
                         <label class="mb-1"><h6 class="mb-0 text-sm">Name</h6></label>
                         <input class="mb-4" type="text" class="form-control" name="name" placeholder="Enter your full name" required>
@@ -41,6 +41,7 @@
                     </div>
                     <div class="row mb-3 px-3 mt-2">
                         <button type="submit" class="btn btn-blue text-center">Sign Up</button>
+                        <!-- <button type="submit" class="g-recaptcha btn btn-blue text-center" data-sitekey="6LcbSdEkAAAAADYWlO-19otCnqIA_jilUxilvkl8" data-callback='onSubmit' data-action='submit'>Submit</button> -->
                     </div>
                 </form>
                 </div>
