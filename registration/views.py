@@ -5,11 +5,10 @@ class Password:
     def encrypt(self,password):
         return make_password(password)
 
-    def decrypt(self,password):
-        pass
+    def decrypt(self,enc_password,password):
+       return check_password(enc_password,password)
 
-
-def sign_in(request):
+def sign_in(request):        
     return render(request,'forms/sign-in.html')
 
 def sign_up(request):
@@ -23,12 +22,7 @@ def sign_up(request):
 
         try:
             student.save()
-
+            return render(request,'forms/sign-in.html',{"message":"Successfully registered ! Please Sign in here !"})
         except:
             print("Unfortunately error occured. ")
-        
-
-
-
-
     return render(request,'forms/sign-up.html')
